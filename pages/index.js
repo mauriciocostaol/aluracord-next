@@ -97,7 +97,7 @@ export default function PaginaInicial() {
             onSubmit={function (event) {
               event.preventDefault();
               console.log("Alguém submeteu um form!");
-              router.push("/chat");
+              router.push(`/chat?username=${username}`);
             }}
             styleSheet={{
               display: "flex",
